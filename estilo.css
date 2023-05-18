@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: hsl(0, 0%, 86%);
+	margin: 0px;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-color: white;
+	width: 430px;
+	padding: 30px;
+	border-radius: 20px 20px 100px 20px;
+}
+
+.conteudo {
+	width: 375px;
+}
+
+.topo {
+	gap: 20px;
+	display: flex;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	color: hsl(0, 1%, 44%);
+}
+
+.topo h1 {
+	letter-spacing: 3px;
+	margin-bottom: 5px;
+}
+
+.erro {
+	padding-top: 3px;
+	height: 14px;
+	color: red;
+	margin-left: 2px;
+	text-transform: none;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.erro-input {
+	border-color: red;
+}
+
+.erro-h1 {
+	color: red;
+}
+
+.separador {
+	margin-bottom: 30px;
+}
+
+input {
+	font-family: "Poppins", sans-serif;
+	width: 70px;
+	padding: 13px 15px;
+	border-radius: 5px;
+	border: 1px solid hsl(0, 0%, 86%);
+	font-size: 1.7em;
+	font-weight: 800;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.meio {
+	border-bottom: 2px solid hsl(0deg 0% 86% / 35%);
+	position: relative;
+}
+
+.meio img {
+	background-color: hsl(259, 100%, 65%);
+	border-radius: 50px;
+	width: 30px;
+	padding: 15px;
+	top: -31px;
+	right: -47px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.meio img:hover {
+	background-color: hsl(259deg 100% 65% / 81%);
+}
+
+.fim {
+	margin-top: 25px;
+}
+
+.fim h1 {
+	font-style: italic;
+	font-size: 4em;
+	font-weight: 800;
+	line-height: 70px;
+	margin: 0px;
+}
+
+.fim span {
+	color: hsl(259, 100%, 65%);
+}
+
+footer {
+	font-size: 0.6em;
+	position: fixed;
+	padding: 5px 0px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center; 
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: hsl(259, 100%, 65%);
+}
+
+/* ---- mobile ---- */
+
+@media (max-width: 530px) {
+
+	.container {
+		background-color: white;
+		width: 300px;
+		padding: 30px;
+		border-radius: 20px 20px 100px 20px;
+	}
+
+	.conteudo {
+		width: unset;
+	}
+
+	.topo {
+		gap: 15px;
+	}
+
+	input {
+		width: 58px;
+		margin-bottom: none;
+	}
+
+	.meio img {
+		top: -31px;
+		right: 117px;
+		width: 25px;
+		padding: 20px;
+	}
+
+	.separador {
+		margin-bottom: 50px;
+	}
+
+	.fim {
+		margin-top: 60px;
+	}
+
+	.fim h1 {
+		font-size: 3.4em;
+		line-height: 65px;
+	}
+} 

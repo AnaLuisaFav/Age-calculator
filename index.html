@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+	<main>
+		<section class="container">
+			<section class="conteudo">
+				<section class="topo">
+					<div class="input-day">
+						<h1 class="h1-day">Day</h1>
+						<input type="number" name="day" class="day" placeholder="DD" oninput="limitarCaracteres(this, 2)">
+							<div class="erro erro-day"></div>
+					</div>
+
+					<div class="input-month">
+						<h1 class="h1-month">Month</h1>
+						<input type="number" name="month" class="month" placeholder="MM" oninput="limitarCaracteres(this, 2)">
+							<div class="erro erro-month"></div>
+					</div>
+
+					<div class="input-year">
+						<h1 class="h1-year">Year</h1>
+						<input type="number" name="year" class="year" placeholder="YYYY" oninput="limitarCaracteres(this, 4)">
+							<div class="erro erro-year"></div>	
+					</div>		
+				</section>
+
+				<div class="separador"></div>
+
+				<section class="meio" id="btn">
+					<img src="img/icon-arrow.svg" alt="arrow">
+				</section>
+
+				<section class="fim">
+					<div class="year">
+						<h1><span>--</span> years</h1>
+					</div>
+					<div class="months">
+						<h1><span>--</span> months</h1>
+					</div>
+					<div class="days">
+						<h1><span>--</span> days</h1>
+					</div>	
+				</section>
+			</section>
+		</section>
+	</main>
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/analuisafav/">Ana Luisa</a>. ♥
+  </footer>
+
+  <script src="init.js"></script>
+
+</body>
+</html>
